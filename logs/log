@@ -1,0 +1,65 @@
+[E 181129 16:40:27 web:1670] Uncaught exception GET /api/piccode?pre=&cur=032bace7-f2ad-4d57-8774-b696479c798f (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/api/piccode?pre=&cur=032bace7-f2ad-4d57-8774-b696479c798f', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/anaconda3/envs/web_test/lib/python3.6/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/handlers/VerifyCode.py", line 24, in get
+        name, text, pic = captcha.generate_captcha()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 218, in generate_captcha
+        self.initialize()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 72, in initialize
+        self._text = text if text else random.sample(string.uppercase + string.uppercase + '3456789', 4)
+    AttributeError: module 'string' has no attribute 'uppercase'
+[E 181129 16:40:27 web:2162] 500 GET /api/piccode?pre=&cur=032bace7-f2ad-4d57-8774-b696479c798f (::1) 12.78ms
+[E 181129 16:43:01 web:1670] Uncaught exception GET /api/piccode?pre=032bace7-f2ad-4d57-8774-b696479c798f&cur=c0598694-bf0c-4ac0-817d-5dc400606d94 (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/api/piccode?pre=032bace7-f2ad-4d57-8774-b696479c798f&cur=c0598694-bf0c-4ac0-817d-5dc400606d94', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/anaconda3/envs/web_test/lib/python3.6/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/handlers/VerifyCode.py", line 24, in get
+        name, text, pic = captcha.generate_captcha()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 218, in generate_captcha
+        self.initialize()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 72, in initialize
+        self._text = text if text else random.sample(string.uppercase + string.uppercase + '3456789', 4)
+    AttributeError: module 'string' has no attribute 'uppercase'
+[E 181129 16:43:01 web:2162] 500 GET /api/piccode?pre=032bace7-f2ad-4d57-8774-b696479c798f&cur=c0598694-bf0c-4ac0-817d-5dc400606d94 (::1) 8.24ms
+[E 181129 16:43:02 web:1670] Uncaught exception GET /api/piccode?pre=c0598694-bf0c-4ac0-817d-5dc400606d94&cur=ecadfa78-e3cf-4f5a-bebe-a5fdfb5ad197 (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/api/piccode?pre=c0598694-bf0c-4ac0-817d-5dc400606d94&cur=ecadfa78-e3cf-4f5a-bebe-a5fdfb5ad197', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/anaconda3/envs/web_test/lib/python3.6/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/handlers/VerifyCode.py", line 24, in get
+        name, text, pic = captcha.generate_captcha()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 218, in generate_captcha
+        self.initialize()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 72, in initialize
+        self._text = text if text else random.sample(string.uppercase + string.uppercase + '3456789', 4)
+    AttributeError: module 'string' has no attribute 'uppercase'
+[E 181129 16:43:02 web:2162] 500 GET /api/piccode?pre=c0598694-bf0c-4ac0-817d-5dc400606d94&cur=ecadfa78-e3cf-4f5a-bebe-a5fdfb5ad197 (::1) 1.60ms
+[E 181129 16:43:03 web:1670] Uncaught exception GET /api/piccode?pre=ecadfa78-e3cf-4f5a-bebe-a5fdfb5ad197&cur=be9da2c4-307c-4438-bac5-000adba2977b (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/api/piccode?pre=ecadfa78-e3cf-4f5a-bebe-a5fdfb5ad197&cur=be9da2c4-307c-4438-bac5-000adba2977b', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/anaconda3/envs/web_test/lib/python3.6/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/handlers/VerifyCode.py", line 24, in get
+        name, text, pic = captcha.generate_captcha()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 218, in generate_captcha
+        self.initialize()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 72, in initialize
+        self._text = text if text else random.sample(string.uppercase + string.uppercase + '3456789', 4)
+    AttributeError: module 'string' has no attribute 'uppercase'
+[E 181129 16:43:03 web:2162] 500 GET /api/piccode?pre=ecadfa78-e3cf-4f5a-bebe-a5fdfb5ad197&cur=be9da2c4-307c-4438-bac5-000adba2977b (::1) 1.56ms
+[E 181129 19:59:35 web:1670] Uncaught exception GET /api/piccode?pre=&cur=fe2b5e74-c626-4751-a76b-0b3ff80ca24d (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/api/piccode?pre=&cur=fe2b5e74-c626-4751-a76b-0b3ff80ca24d', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/anaconda3/envs/web_test/lib/python3.6/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/handlers/VerifyCode.py", line 24, in get
+        name, text, pic = captcha.generate_captcha()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 218, in generate_captcha
+        self.initialize()
+      File "/Users/guoyuanpei/workspace/pworkspace/tornado-Ihome/utils/captcha/captcha.py", line 72, in initialize
+        self._text = text if text else random.sample(string.uppercase + string.uppercase + '3456789', 4)
+    AttributeError: module 'string' has no attribute 'uppercase'
+[E 181129 19:59:35 web:2162] 500 GET /api/piccode?pre=&cur=fe2b5e74-c626-4751-a76b-0b3ff80ca24d (::1) 9.06ms
